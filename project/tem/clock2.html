@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <input type="time" id="time">
+    <h1 id="out"></h1>
+    <input type="radio" id="switchOn" name="switch" value="on" onclick="alarmSwitching()">on
+    <input type="radio" id="switchOff" name="switch" value="off" onclick="alarmSwitching()">off
+    <h3 id="switchOut"></h3>
+    <br>
+    <button type="submit" onclick="Out()">set</button>
+    <select id="day">
+        <option value="월요일">월</option>
+        <option value="화요일">화</option>
+        <option value="수요일">수</option>
+        <option value="목요일">목</option>
+        <option value="금요일">금</option>
+        <option value="토요일">토</option>
+        <option value="일요일">일</option>
+    </select>
+
+    <button id="set" type="button" onclick="setAlarm()">setAlarm</button>
+    <script src="clock2.js"></script>
+</body>
+</html>
